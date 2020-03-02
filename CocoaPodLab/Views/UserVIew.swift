@@ -15,7 +15,7 @@ class UserVIew: UIView {
     public lazy var collectionView: UICollectionView = {
         let slantedSayout = CollectionViewSlantedLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: slantedSayout)
-        cv.backgroundColor = .systemGray4
+        cv.backgroundColor = .black
         return cv
     }()
     

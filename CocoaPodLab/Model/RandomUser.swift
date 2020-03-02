@@ -17,6 +17,7 @@ struct Result1: Codable {
     let name: Name
     let dob: Dob
     let location: Location
+    let picture: Picture
 }
 
 struct Name: Codable {
@@ -36,6 +37,10 @@ struct Location: Codable {
 struct Street: Codable {
     let number: Int
     let name: String
+}
+
+struct Picture: Codable {
+    let large, medium, thumbnail: String
 }
 
 
