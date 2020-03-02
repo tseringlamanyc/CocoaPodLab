@@ -9,10 +9,10 @@
 import Foundation
 
 struct RandomUser: Codable {
-    let results: [Result]
+    let results: [Result1]
 }
 
-struct Result: Codable {
+struct Result1: Codable {
     let email: String
     let name: Name
     let dob: Dob
