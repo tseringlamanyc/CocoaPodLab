@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PeopleListController.swift
 //  CocoaPodLab
 //
 //  Created by Tsering Lama on 3/1/20.
@@ -12,9 +12,7 @@ class PeopleListController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
-
-
+    
 }
-

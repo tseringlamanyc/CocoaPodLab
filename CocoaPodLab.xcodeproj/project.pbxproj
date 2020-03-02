@@ -3,15 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		526C3A78240C8DCC00839E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C3A77240C8DCC00839E13 /* AppDelegate.swift */; };
 		526C3A7A240C8DCC00839E13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C3A79240C8DCC00839E13 /* SceneDelegate.swift */; };
-		526C3A7C240C8DCC00839E13 /* PeopleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C3A7B240C8DCC00839E13 /* PeopleListController.swift */; };
 		526C3A81240C8DCE00839E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526C3A80240C8DCE00839E13 /* Assets.xcassets */; };
 		526C3A84240C8DCE00839E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C3A82240C8DCE00839E13 /* LaunchScreen.storyboard */; };
+		528550AB240C910D00B111AB /* PeopleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528550AA240C910D00B111AB /* PeopleListController.swift */; };
+		528550AD240C923D00B111AB /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528550AC240C923D00B111AB /* RandomUser.swift */; };
 		A97FD2DB2B2B1183390C1F2A /* Pods_CocoaPodLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63868E6E0E66CFFA79343B4 /* Pods_CocoaPodLab.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,10 +20,11 @@
 		526C3A74240C8DCC00839E13 /* CocoaPodLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526C3A77240C8DCC00839E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526C3A79240C8DCC00839E13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		526C3A7B240C8DCC00839E13 /* PeopleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListController.swift; sourceTree = "<group>"; };
 		526C3A80240C8DCE00839E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526C3A83240C8DCE00839E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526C3A85240C8DCE00839E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528550AA240C910D00B111AB /* PeopleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListController.swift; sourceTree = "<group>"; };
+		528550AC240C923D00B111AB /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		6ABC7D73C49EDE44E04DE095 /* Pods-CocoaPodLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodLab.release.xcconfig"; path = "Target Support Files/Pods-CocoaPodLab/Pods-CocoaPodLab.release.xcconfig"; sourceTree = "<group>"; };
 		A07FB95E19266A270D34D275 /* Pods-CocoaPodLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodLab.debug.xcconfig"; path = "Target Support Files/Pods-CocoaPodLab/Pods-CocoaPodLab.debug.xcconfig"; sourceTree = "<group>"; };
 		C63868E6E0E66CFFA79343B4 /* Pods_CocoaPodLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,14 +63,47 @@
 		526C3A76240C8DCC00839E13 /* CocoaPodLab */ = {
 			isa = PBXGroup;
 			children = (
+				528550A9240C90AA00B111AB /* APiClient */,
+				528550A8240C90A500B111AB /* Model */,
+				528550A7240C90A000B111AB /* Views */,
+				528550A6240C909700B111AB /* VC */,
 				526C3A77240C8DCC00839E13 /* AppDelegate.swift */,
 				526C3A79240C8DCC00839E13 /* SceneDelegate.swift */,
-				526C3A7B240C8DCC00839E13 /* PeopleListController.swift */,
 				526C3A80240C8DCE00839E13 /* Assets.xcassets */,
 				526C3A82240C8DCE00839E13 /* LaunchScreen.storyboard */,
 				526C3A85240C8DCE00839E13 /* Info.plist */,
 			);
 			path = CocoaPodLab;
+			sourceTree = "<group>";
+		};
+		528550A6240C909700B111AB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				528550AA240C910D00B111AB /* PeopleListController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		528550A7240C90A000B111AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		528550A8240C90A500B111AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				528550AC240C923D00B111AB /* RandomUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		528550A9240C90AA00B111AB /* APiClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APiClient;
 			sourceTree = "<group>";
 		};
 		6259F57ED362C8BD9943836B /* Frameworks */ = {
@@ -85,7 +120,6 @@
 				A07FB95E19266A270D34D275 /* Pods-CocoaPodLab.debug.xcconfig */,
 				6ABC7D73C49EDE44E04DE095 /* Pods-CocoaPodLab.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -203,9 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526C3A7C240C8DCC00839E13 /* PeopleListController.swift in Sources */,
 				526C3A78240C8DCC00839E13 /* AppDelegate.swift in Sources */,
+				528550AB240C910D00B111AB /* PeopleListController.swift in Sources */,
 				526C3A7A240C8DCC00839E13 /* SceneDelegate.swift in Sources */,
+				528550AD240C923D00B111AB /* RandomUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
