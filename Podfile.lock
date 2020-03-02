@@ -1,14 +1,16 @@
 PODS:
   - Alamofire (5.0.2)
   - CollectionViewSlantedLayout (3.1.1)
-  - Kingfisher (5.13.1):
-    - Kingfisher/Core (= 5.13.1)
-  - Kingfisher/Core (5.13.1)
+  - GlitchLabel (2.0.0)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - CollectionViewSlantedLayout (~> 3.1)
+  - GlitchLabel (~> 2.0.0)
   - Kingfisher
   - SnapKit
 
@@ -16,15 +18,17 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - CollectionViewSlantedLayout
+    - GlitchLabel
     - Kingfisher
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
   CollectionViewSlantedLayout: 24397455acd2461960bc45d394e0ef99c17d03ce
-  Kingfisher: f33a848445e33c543620812158dc5d47f6bf90df
+  GlitchLabel: 65773d1df358ef66c8daa40428eb79bd04e7a976
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 396460b733b6382b30bb5af2cd76d45bbfcce2d5
+PODFILE CHECKSUM: 17afaeec91e6c76f67de5583123b119cfe0364d7
 
 COCOAPODS: 1.8.4

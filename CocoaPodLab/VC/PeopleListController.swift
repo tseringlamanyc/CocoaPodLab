@@ -26,6 +26,7 @@ class PeopleListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userView.collectionView.dataSource = self
+        userView.collectionView.delegate = self 
         userView.collectionView.register(UserCell.self, forCellWithReuseIdentifier: "userCell")
         getData()
     }
@@ -64,25 +65,13 @@ extension PeopleListController: UICollectionViewDataSource {
     }
 }
 
-extension PeopleListController: CollectionViewDelegateSlantedLayout {
+extension PeopleListController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        NSLog("Did select item at indexPath: [\(indexPath.section)][\(indexPath.row)]")
-    }
-
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: CollectionViewSlantedLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(1000)
+        let detailVC = DetailVC()
+        let aUser = allUsers[indexPath.row]
+        detailVC.user = aUser 
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
-
-//extension PeopleListController: UICollectionViewDelegateFlowLayout {
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let maxSize = UIScreen.main.bounds.size
-//        let itemWidth: CGFloat = maxSize.width
-//        return CGSize(width: itemWidth, height: 464)
-//    }
-//}
 

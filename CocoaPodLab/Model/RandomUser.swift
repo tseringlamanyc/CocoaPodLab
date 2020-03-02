@@ -18,6 +18,7 @@ struct Result1: Codable {
     let dob: Dob
     let location: Location
     let picture: Picture
+    let cell: String
 }
 
 struct Name: Codable {

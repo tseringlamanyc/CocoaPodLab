@@ -18,4 +18,6 @@ target 'CocoaPodLab' do
    # slantedView
    pod 'CollectionViewSlantedLayout', '~> 3.1'
 
+   pod "GlitchLabel", "~> 2.0.0"
+
 end

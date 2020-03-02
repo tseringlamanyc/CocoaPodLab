@@ -16,6 +16,8 @@
 		528550AF240C93E800B111AB /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528550AE240C93E800B111AB /* UserSession.swift */; };
 		528550B1240C95C900B111AB /* UserVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528550B0240C95C900B111AB /* UserVIew.swift */; };
 		528550B4240C97B500B111AB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528550B3240C97B500B111AB /* UserCell.swift */; };
+		528550B6240CA2F600B111AB /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528550B5240CA2F600B111AB /* DetailVC.swift */; };
+		528550B8240CB96800B111AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528550B7240CB96800B111AB /* DetailView.swift */; };
 		A97FD2DB2B2B1183390C1F2A /* Pods_CocoaPodLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63868E6E0E66CFFA79343B4 /* Pods_CocoaPodLab.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		528550AE240C93E800B111AB /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		528550B0240C95C900B111AB /* UserVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVIew.swift; sourceTree = "<group>"; };
 		528550B3240C97B500B111AB /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		528550B5240CA2F600B111AB /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		528550B7240CB96800B111AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6ABC7D73C49EDE44E04DE095 /* Pods-CocoaPodLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodLab.release.xcconfig"; path = "Target Support Files/Pods-CocoaPodLab/Pods-CocoaPodLab.release.xcconfig"; sourceTree = "<group>"; };
 		A07FB95E19266A270D34D275 /* Pods-CocoaPodLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodLab.debug.xcconfig"; path = "Target Support Files/Pods-CocoaPodLab/Pods-CocoaPodLab.debug.xcconfig"; sourceTree = "<group>"; };
 		C63868E6E0E66CFFA79343B4 /* Pods_CocoaPodLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				528550AA240C910D00B111AB /* PeopleListController.swift */,
+				528550B5240CA2F600B111AB /* DetailVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				528550B0240C95C900B111AB /* UserVIew.swift */,
+				528550B7240CB96800B111AB /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,10 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				526C3A78240C8DCC00839E13 /* AppDelegate.swift in Sources */,
+				528550B8240CB96800B111AB /* DetailView.swift in Sources */,
 				528550B1240C95C900B111AB /* UserVIew.swift in Sources */,
 				528550AF240C93E800B111AB /* UserSession.swift in Sources */,
 				528550AB240C910D00B111AB /* PeopleListController.swift in Sources */,
 				526C3A7A240C8DCC00839E13 /* SceneDelegate.swift in Sources */,
+				528550B6240CA2F600B111AB /* DetailVC.swift in Sources */,
 				528550AD240C923D00B111AB /* RandomUser.swift in Sources */,
 				528550B4240C97B500B111AB /* UserCell.swift in Sources */,
 			);
